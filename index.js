@@ -2,7 +2,7 @@ const Web3 = require('web3'); // creating an instance of web3 package
 const solc = require('solc');
 const fs = require('fs');
 async function web3Solc(){
-    web3 = new Web3('http://127.0.0.1:8545')
+    //web3 = new Web3('http://127.0.0.1:8545')
     nodeInfo = await web3.eth.getNodeInfo();
     console.log(nodeInfo);
     let accounts = await web3.eth.getAccounts();
